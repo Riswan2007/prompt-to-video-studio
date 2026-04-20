@@ -5,7 +5,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import Placeholder from "./pages/Placeholder.tsx";
+import Projects from "./pages/Projects.tsx";
+import Templates from "./pages/Templates.tsx";
+import History from "./pages/History.tsx";
+import Settings from "./pages/Settings.tsx";
 
 const queryClient = new QueryClient();
 
@@ -17,10 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Placeholder title="Projects" description="Your saved video projects will appear here." />} />
-          <Route path="/templates" element={<Placeholder title="Templates" description="Browse cinematic, social, and educational starting points." />} />
-          <Route path="/history" element={<Placeholder title="History" description="A timeline of every prompt and render you've created." />} />
-          <Route path="/settings" element={<Placeholder title="Settings" description="Account, preferences, and API keys live here." />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/templates" element={<Templates />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
