@@ -104,5 +104,4 @@ All colors MUST be HSL.
   }
   .scrollbar-thin::-webkit-scrollbar { height: 8px; width: 8px; }
   .scrollbar-thin::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 8px; }
-  }
 }
